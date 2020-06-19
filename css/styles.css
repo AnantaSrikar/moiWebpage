@@ -77,7 +77,7 @@ body {
 
 footer {
 	position: fixed;
-	color: cornsilk;
+	color: white;
 	bottom: 0;
 	text-align: center;
 	padding: 5px 0px px 0px;
@@ -90,6 +90,7 @@ footer {
 	padding: 0;
 	display: flex;
 	justify-content: center;
+	flex-wrap: wrap
 }
 
 .social li {
@@ -98,7 +99,7 @@ footer {
 
 .social li a {
 	text-decoration: none;
-	padding: 1rem;
+	padding: 0.5rem 1rem 0.5rem 1rem;
 	display: block;
 	color: white;
 }
@@ -113,7 +114,7 @@ footer {
 }
 
 p {
-	padding: 10px;
+	padding: 5px;
 	margin: 0;
 	font-size: large;
 	text-align: center;
