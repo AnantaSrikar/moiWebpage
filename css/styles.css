@@ -1,53 +1,109 @@
-@import url('https://fonts.googleapis.com/css2?family=B612&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
 
-*{
+* {
 	box-sizing: border-box;
+}
+
+body {
 	margin: 0;
 	padding: 0;
 }
 
-/* body{
-	background-color: aqua;
-} */
-
-.row{
+.row {
 	width: 100%;
 }
 
-.navbar{
-	top: 0;
-	width: 100%;
+.navbar {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 	background-color: #55D6AA;
 }
 
-.navbar a{
-	display: inline-block;
-	font-size: 16px;
-	color: #000000;
-	text-align: center;
-	text-decoration: none;
-	margin-right: 30px;
-	text-transform: uppercase;
-	font-family: sans-serif;
-	padding: 20px;
-	font-weight: 800;
+.name-title {
+	font-size: 1.5rem;
+	margin: .5rem;
+	font-family: 'Ubuntu', sans-serif;
+	padding-left: 20px;
 }
 
-.navbar a:hover{
+.name-title a {
+	text-decoration: none;
+	color: black;
+}
+
+.navbar-links ul {
+	margin: 0;
+	padding: 0;
+	display: flex;
+}
+
+.navbar-links li {
+	list-style: none;
+}
+
+.navbar-links li a{
+	text-decoration: none;
+	padding: 1rem;
+	display: block;
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 16px;
+	font-weight: 800;
+	text-transform: uppercase;
+	color: black;
+}
+
+.navbar-links li:hover {
 	background-color: #3FAB86;
 }
 
-footer{
+.toggle-button {
+	position: absolute;
+	top: .75rem;
+	right : 1rem;
+	display: none;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 30px;
+	height: 21px;
+}
+
+.toggle-button .bar {
+	height: 3px;
+	width: 100%;
+	background-color: white;
+	border-radius: 10px;
+}
+
+footer {
 	position: fixed;
 	color: cornsilk;
 	bottom: 0;
 	text-align: center;
-	padding: 40px;
+	padding: 5px 0px px 0px;
 	background-color: black;
-	font-family: sans-serif;
+	font-family: 'Ubuntu', sans-serif;
 }
 
-.container{
+.social ul {
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+}
+
+.social li {
+	list-style: none;
+}
+
+.social li a {
+	text-decoration: none;
+	padding: 1rem;
+	display: block;
+	color: white;
+}
+
+.container {
 	margin-left: auto;
 	margin-right: auto;
 	padding: 10px;
@@ -56,18 +112,43 @@ footer{
 	width: 100%;
 }
 
-p{
+p {
 	padding: 10px;
 	margin: 0;
 	font-size: large;
 	text-align: center;
 }
 
-section{
-	width: 100%;
-	border: 1px solid black;
-	position: relative;
-	background-color: greenyellow;
+/* For navbar*/
+
+@media (max-width: 700px) {
+	.toggle-button {
+		display: flex;
+	}
+
+	.navbar-links {
+		display: none;
+		width: 100%;
+	}
+
+	.navbar {
+		flex-direction: column;
+		align-items: flex-start;
+	}
+	.navbar-links ul {
+		width: 100%;
+		flex-direction: column;
+	}
+	.navbar-links li {
+		text-align: center;
+	}
+	.navbar-links li a {
+		padding: .5rem 1rem;
+	}
+
+	.navbar-links.active {
+		display: flex;
+	}
 }
 
 /* Desktop View (screw responsive design) */
@@ -128,7 +209,7 @@ section{
 
 /* Tab View (hey responsive design aint that bad either  */
 
-@media (min-width: 768px) and (max-width: 991px){
+@media (min-width: 768px) and (max-width: 991px) {
 	.col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12{
 		float: left;
 	}
@@ -183,7 +264,7 @@ section{
 }
 
 /* Small devices (yaay)  */
-@media (max-width: 767px){
+@media (max-width: 767px) {
 	.col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12{
 		float: left;
 	}
