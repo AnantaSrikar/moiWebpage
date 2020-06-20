@@ -2,6 +2,7 @@
 
 * {
 	box-sizing: border-box;
+	font-family: 'Ubuntu', sans-serif;
 }
 
 body {
@@ -23,7 +24,6 @@ body {
 .name-title {
 	font-size: 1.5rem;
 	margin: .5rem;
-	font-family: 'Ubuntu', sans-serif;
 	padding-left: 20px;
 }
 
@@ -46,7 +46,6 @@ body {
 	text-decoration: none;
 	padding: 1rem;
 	display: block;
-	font-family: 'Ubuntu', sans-serif;
 	font-size: 16px;
 	font-weight: 800;
 	text-transform: uppercase;
@@ -75,13 +74,44 @@ body {
 	border-radius: 10px;
 }
 
+.container {
+	padding: 10px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	display: flex;
+	flex-flow: row;
+	height: 100%;
+	/* text-align: center; */
+	align-items: center;
+	/* background-color: red; */
+}
+
+.container img {
+	margin-left: 10%;
+	width: 350px;
+	height: 350px;
+}
+
+.container p {
+	float: left;
+	padding: 10px;
+	margin-left: 20px;
+	margin-top: 200px;
+	text-align: center;
+	/* height: 3rem; */
+}
+
 footer {
-	position: fixed;
 	color: white;
-	bottom: 0;
 	text-align: center;
 	background-color: black;
-	font-family: 'Ubuntu', sans-serif;
+}
+
+footer p {
+	padding: 5px;
+	margin: 0;
+	font-size: large;
+	text-align: center;
 }
 
 .social ul {
@@ -89,7 +119,7 @@ footer {
 	padding: 0;
 	display: flex;
 	justify-content: center;
-	flex-wrap: wrap
+	flex-wrap: wrap;
 }
 
 .social li {
@@ -103,27 +133,29 @@ footer {
 	color: white;
 }
 
-.container {
-	padding: 10px;
-	margin-top: 10px;
-	margin-bottom: 10px;
-	display: flex;
-	flex-flow: column;
-	height: 100%;
-	text-align: center;
-	/* background-color: red; */
+.speech-bubble {
+	position: relative;
+	background: #f15458;
+	border-radius: .4em;
 }
 
-p {
-	padding: 5px;
-	margin: 0;
-	font-size: large;
-	text-align: center;
+.speech-bubble:after {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 50%;
+	width: 0;
+	height: 0;
+	border: 0.625em solid transparent;
+	border-right-color: #f15458;
+	border-left: 0;
+	margin-top: -0.625em;
+	margin-left: -0.625em;
 }
 
 /* For navbar*/
 
-@media (max-width: 700px) {
+@media (max-width: 600px) {
 	.toggle-button {
 		display: flex;
 	}
@@ -151,4 +183,42 @@ p {
 	.navbar-links.active {
 		display: flex;
 	}
+
+	.container {
+		flex-flow: column;
+		align-content: center;
+		flex-wrap: wrap;
+	}
+	.container img {
+		width: 250px;
+		height: 250px;
+		margin-left: 0;
+		margin-bottom: 20px;
+	}
+
+	.container p {
+		margin: 0;
+	}
+
+	.speech-bubble {
+		position: relative;
+		background: #f15458;
+		border-radius: .4em;
+	}
+	
+	.speech-bubble:after {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 50%;
+		width: 0;
+		height: 0;
+		border: 0.625em solid transparent;
+		border-bottom-color: #f15458;
+		border-top: 0;
+		border-right: 0;
+		margin-left: -0.312em;
+		margin-top: -0.625em;
+	}
+
 }
