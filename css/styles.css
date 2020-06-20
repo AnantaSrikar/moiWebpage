@@ -86,6 +86,10 @@ body {
 	/* background-color: red; */
 }
 
+.content {
+	padding: 20px;
+}
+
 .container img {
 	margin-left: 10%;
 	width: 350px;
