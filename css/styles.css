@@ -88,6 +88,20 @@ body {
 
 .content {
 	padding: 20px;
+	margin-left: 10%;
+	margin-right: 10%;
+}
+
+.content p {
+	text-align: justify;
+}
+
+.content a{
+	text-decoration: none;
+}
+
+.content a:hover {
+	text-decoration: underline;
 }
 
 .container img {
