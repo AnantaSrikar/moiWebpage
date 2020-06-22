@@ -317,7 +317,7 @@ footer p {
 
 	.speech-bubble {
 		position: relative;
-		background: #f15458;
+		background: #0b99d5;
 		border-radius: .4em;
 	}
 	
@@ -329,7 +329,7 @@ footer p {
 		width: 0;
 		height: 0;
 		border: 0.625em solid transparent;
-		border-bottom-color: #f15458;
+		border-bottom-color: #0b99d5;
 		border-top: 0;
 		border-right: 0;
 		margin-left: -0.312em;
@@ -352,7 +352,7 @@ footer p {
 
 	.speech-bubble-2 {
 		position: relative;
-		background: #0b99d5;
+		background: #fbff2b;
 		border-radius: .4em;
 	}
 	
@@ -364,7 +364,7 @@ footer p {
 		width: 0;
 		height: 0;
 		border: 20px solid transparent;
-		border-top-color: #0b99d5;
+		border-top-color: #fbff2b;
 		border-bottom: 0;
 		margin-left: -20px;
 		margin-bottom: -20px;
