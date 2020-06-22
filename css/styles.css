@@ -78,6 +78,11 @@ body {
 	margin-left: 10%;
 	margin-right: 10%;
 	text-align: justify;
+	padding: 20px;
+}
+
+.content hr {
+	border: 2px solid;
 }
 
 .content a{
@@ -88,8 +93,15 @@ body {
 	text-decoration: underline;
 }
 
-.content hr {
-	border: 2px solid;
+.content a:visited{
+	color: blue;
+}
+
+.instagram-image{
+	margin-top: 50px;
+	margin-bottom: 30px;
+	display: flex;
+	justify-content: center;
 }
 
 .blog {
@@ -108,6 +120,10 @@ body {
 
 .blog a:hover {
 	text-decoration: underline;
+}
+
+.blog a:visited{
+	color: blue;
 }
 
 code {
@@ -212,7 +228,7 @@ footer p {
 
 .speech-bubble {
 	position: relative;
-	background: #f15458;
+	background: #0b99d5	;
 	border-radius: .4em;
 }
 
@@ -224,7 +240,7 @@ footer p {
 	width: 0;
 	height: 0;
 	border: 0.625em solid transparent;
-	border-right-color: #f15458;
+	border-right-color: #0b99d5;
 	border-left: 0;
 	margin-top: -0.625em;
 	margin-left: -0.625em;
@@ -232,7 +248,7 @@ footer p {
 
 .speech-bubble-2 {
 	position: relative;
-	background: #0b99d5;
+	background: #fbff2b;
 	border-radius: .4em;
 }
 
@@ -244,7 +260,7 @@ footer p {
 	width: 0;
 	height: 0;
 	border: 20px solid transparent;
-	border-left-color: #0b99d5;
+	border-left-color: #fbff2b;
 	border-right: 0;
 	border-bottom: 0;
 	margin-top: -10px;
@@ -358,9 +374,14 @@ footer p {
 	}
 }
 
-/* For blogs */
+/* For blogs and content */
 @media (max-width: 1000px) {
 	.blog {
+		margin-right: auto;
+		margin-left: auto;
+	}
+
+	.content {
 		margin-right: auto;
 		margin-left: auto;
 	}
