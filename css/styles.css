@@ -27,6 +27,8 @@ body {
 	justify-content: space-between;
 	align-items: center;
 	background-color: #55D6AA;
+	position: sticky;
+	top: 0;
 }
 
 .name-title {
