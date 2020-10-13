@@ -85,6 +85,10 @@ body {
 	border-radius: 10px;
 }
 
+.heading {
+	text-align: center;
+}
+
 .content {
 	margin-left: 10%;
 	margin-right: 10%;
@@ -143,6 +147,16 @@ code {
 	font-size: 95%;
 	color: purple;
 	background-color: #D3D3D3;
+}
+
+a h2 {
+	display: inline;
+}
+
+date {
+	float: right;
+	padding: 10px;
+	font-weight: bold;
 }
 
 .container {
