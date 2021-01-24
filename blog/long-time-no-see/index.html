@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+		<meta name="description" content="How I made my website">
+
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css" rel="stylesheet">
+		
+		<link rel="stylesheet" type="text/css" href="/css/styles.css">
+
+		<script src="/js/script.js" defer></script>
+
+		<title>Long time no see</title>
+	</head>
+
+	<body>
+		<nav class="navbar">
+
+			<div class="name-title"><a href="/">Ananta Srikar</a></div>
+
+			<a href="javascript:void(0)" class="toggle-button">
+				<span class="bar"></span>
+				<span class="bar"></span>
+				<span class="bar"></span>
+			</a>
+
+			<div class="navbar-links">
+				<ul>
+					<li><a href="/">Home</a></li>
+					<li><a href="/about_me/">About me</a></li>
+					<li><a href="/blog/">Blog</a></li>
+				</ul>
+			</div>
+		
+		</nav>
+
+		<div class="blog">
+			<h1>Long time no see</h1>
+			<p>
+				It's been a very, very long time since I last wrote a blog, I blame it on the ongoing pandemic.
+				Thus I thought of posting an update, and here it is.
+
+				A lot of things happened since the last time, few of them being bagging the second place in a hack week,
+				doing 2 internships, and becoming the Vice-President for my Uni's Computer Science club, <a target="_blank" href="https://mec-enigma.github.io/">Enigma</a>,
+				and conducting many sessions and finally, the coolest thing, building my PC.
+			</p>
+			
+			<h2>Begin the quarantine: CovIndia</h2>
+			<p>
+				My quarantine had begun with me working on <a target="_blank" href="https://covindia.com/the-legacy/">CovIndia</a>, the biggest project
+				I've ever been a part of. With that said, I was busy for 3 whole months. I started by collecting data the whole day (literally the whole day, starting at 7 AM and ending at 11 PM),
+				and then we got more people into the Data Acquisition team, as the number
+				of cases was rising and things started to get out of hand. So that meant we got no time for ourselves.
+				Hence we got more people into the Data Acquisition team, which slightly eased the load.
+			</p>
+
+			<p>
+				Even with that, one month into the pandemic, it became very difficult to manage and verify the number of covid cases.
+				Our news sources were all over the place, and it was very chaotic. Eventually, we realized Twitter was
+				a good place for reliable updates since there were specific reporters for every state, who'd tweet out
+				new updates instantly. The catch was we had stayed on the lookout for new tweets.
+			</p>
+
+			<p>
+				This gave me an idea to make a bot for keeping a track of all these tweets. I quickly built a basic
+				Twitter bot that would re-tweet any tweet that had a specific set of words in it. I must say that I
+				didn't expect much from it, as it was a single <code>if</code> statement. It managed to get a 90-ish%
+				accuracy. I quickly set up the Slack integration for Twitter, and we had our alpha version of a fully
+				functional Covid tracker bot. I decided to call it <a target="_blank" href="https://github.com/covindia/CovIndia-DataAcquisition/tree/master/Sam">Sam</a> (Yes, the very same one from Marvel), and do note
+				that it had a bodyguard named <a target="_blank" href="https://github.com/covindia/CovIndia-DataAcquisition/blob/c8c8db0db138eb2f54662058d32482cc2b04ad48/Sam/startSam.py#L23">Red Wing</a>.
+			</p>
+
+			<p>
+				Eventually, we also needed a program to check if our cases were tallying with the State count. For that,
+				I made another bot which used Slack API and called it <a target="_blank" href="https://github.com/covindia/CovIndia-DataAcquisition/tree/master/tallyBot">TallyBot</a> (simple and cute). It was made to check the different totals,
+				which helped us verify the correctness of our data. Code for both the bots can be found <a target="blank" href="https://github.com/covindia/CovIndia-DataAcquisition">here</a>.
+				I even got the opportunity to work on CovIndia's backend and made a <a target="_blank" href="https://github.com/covindia/CovIndia-BigDataBox/commits?author=AnantaSrikar">few PRs</a>. 
+			</p>
+
+			<p>
+
+				But alas, all good things must come to an end. On 31-May-2020 16:00:00, <a target="_blank" href="https://covindia.com/">covindia.com</a> shut down after
+				nearly 2.5 months of running. It had become increasingly difficult for us (the Data Acquisition team) to
+				keep collecting data, as you know the number of cases started increasing super exponentially. And along
+				with that online classes started, which would make things difficult to handle.
+			</p>
+
+			<h2>My First Internship</h2>
+			<p>
+				As CovIndia was coming to an end, I realised it was time to find something else to work on. Landing an internship was my main idea,
+				but do note, it's technically impossible for a first-year engineering student to get an internship. This is because
+				first years usually know little to nothing. But then me being a nerd, I did know something, and wanted to
+				use what I knew in real life. With all this in mind, I began searching for an internship.
+			</p>
+			
+			<p>
+				I made a
+				resume keeping in mind my current interest at that time, machine learning. I scoured for days on multiple
+				internship hunting platforms, with no luck. And oh boy, not to forget the 'Pay to get an internship'
+				offers'. When I felt that all hope was lost, my Uni's Vice Chancellor had sent a mail about a 'free'
+				internship opportunity, which had many topics like IoT, Robotics and of course, Machine learning.
+				Besides that, it had a 'Tie up' with <strong>IBM</strong>, so it was more attractive 🎉🎉	.
+			</p>
+
+			<p>
+				I immediately applied and in 5 minutes,
+				I had got a mail saying that I'd have to take a test, and if I pass, then only I'd be getting to intern
+				with them. Without further ado, I took the test (on my phone, and it was a <i>big mistake</i>). The
+				website where I had to take that test, was made ONLY for desktops. But somehow, I had manged and passed it.
+				The test consisted of 20 MCQs, based on various topics like basic coding (both C and Python) and the math
+				behind Machine learning.
+			</p>
+
+			<p>
+				A few days later, I get a mail asking me to join a slack Workspace. There were 200 more students
+				there doing the same thing. We were asked to make a customer care chatbot using IBM cloud applications.
+				We had many online meetings where they would teach us how to use the IBM cloud applications to
+				achieve the final goal. In about 15 days, I completed it, and to be honest, it was fairly simple.
+				My project was evaluated at the end of the month, and I had completed my first internship! 🥳
+			</p>
+
+			<br>
+			<p>
+				That's all for now. I'd probably make a part - II for this blog because way too many things happened, and I don't
+				want to spam it with all the details at once. Who doesn't want another blog?
+			</p>
+
+			<p>
+				Anyways, until next time.
+			</p>
+		</div>
+
+		<footer class="row">
+			<div class="social">
+				<ul>
+					<li><a href="https://github.com/AnantaSrikar" title="GitHub" target="_blank"><i class="fab fa-github fa-2x" aria-hidden="true"></i></a></li>
+					<li><a href="https://www.linkedin.com/in/ananta-srikar/" title="LinkedIn" target="_blank"><i class="fab fa-linkedin fa-2x" aria-hidden="true"></i></a></li>
+					<li><a href="https://www.instagram.com/gitkar2001/" title="Instagram" target="_blank"><i class="fab fa-instagram fa-2x" aria-hidden="true"></i></a></li>
+					<li><a href="https://www.youtube.com/channel/UCtuoe_TL6lXl18K8Nayx-7g" title="YouTube" target="_blank"><i class="fab fa-youtube fa-2x" aria-hidden="true"></i></a></li>
+					<li><a href="https://discordapp.com/users/605674719731253263" title="Discord" target="_blank"><i class="fab fa-discord fa-2x" aria-hidden="true"></i></a></li>
+					<li><a href="https://twitter.com/AnantaSrikar" title="Twitter" target="_blank"><i class="fab fa-twitter fa-2x" aria-hidden="true"></i></a></li>
+					<li><a href="https://www.reddit.com/user/AnantaSrikar" title="Reddit" target="_blank"><i class="fab fa-reddit fa-2x" aria-hidden="true"></i></a></li>
+					<li><a href="mailto:srikar19507@mechyd.ac.in" title="Email me!" target="_blank"><i class="fa fa-envelope fa-2x" aria-hidden="true"></i></a></li>
+				</ul>
+			</div>
+			<p>Made by Ananta Srikar</p>
+		</footer>
+
+	</body>
+</html>
